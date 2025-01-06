@@ -1,17 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable strict TypeScript and ESLint checks for better code quality
   typescript: {
-    // Keep this false to ensure build-time TypeScript errors are caught
-    ignoreBuildErrors: false,
+    ignoreBuildErrors: false, // Ensure build-time TypeScript errors are caught
   },
   eslint: {
-    // Ensure build-time ESLint errors are caught
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: false, // Ensure build-time ESLint errors are caught
   },
-  // Add other configurations as needed
-  reactStrictMode: true,
-  swcMinify: true,
+  reactStrictMode: true, // Enable React strict mode
+  swcMinify: true, // Enable SWC minification
 };
 
-module.exports = nextConfig;
+export default nextConfig;
